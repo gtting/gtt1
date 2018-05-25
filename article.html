@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>列表页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/idangerous.swiper2.7.6.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_634183_xtssol3c2caw0zfr.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+<div id="header">
+    <div class="page-container" id="nav" style="background-color: #1e8083 !important;height: 72px">
+        <div id="logo" class="logo">
+            <a href="/" target="_self" title="首页">
+                <img title="慕课网" src="images/logo2.png">
+            </a>
+        </div>
+        <ul class="nav-item">
+            <li class="set-btn visible-xs-block">
+                <a href="/" target="_self">登录</a>
+                /
+                <a href="/" target="_self">注册</a>
+            </li>
+            <li>
+                <a href="/" target="_self">免费课程</a>
+            </li>
+            <li>
+                <a href="/" class="program-nav " target="_self">职业路径</a>
+            </li>
+            <li>
+                <a href="/" target="_self">实战</a>
+            </li>
+            <li>
+                <a href="/" target="_self">猿问</a>
+            </li>
+            <li>
+                <a href="/" target="_self">手记</a>
+            </li>
+        </ul>
+        <div id="login-area">
+            <ul class="header-unlogin clearfix">
+                <li class="app-load" id="js-app-load">
+                    <a href="/" target="_blank" style="width:60px;">下载APP</a>
+                    <div class="app-load-box clearfix js-load-box">
+                        <img src="images/appload.png" class="l">
+                        <div class="r">
+                            <p>扫描下载慕课网APP</p>
+                            <a href="/" target="_blank">
+                                <i class="icon-apple"></i>
+                                App Store下载
+                            </a>
+                            <a href="/" target="_blank">
+                                <i class="icon-android"></i>
+                                Android下载
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="shop-cart" id="shop-cart">
+                    <a href="/" class="shop-cart-icon" target="_blank">
+                        <i class="iconfont icon-gouwuche"></i>
+                        <span>购物车</span>
+                    </a>
+                    <div class="my-cart" id="js-my-cart">
+                        <div class="cart-title-box clearfix">
+                            <h2 class="l">我的购物车</h2>
+                            <h5 class="r">已加入<span class="js-incart-num">0</span>门课程</h5>
+                        </div>
+                        <div class="cart-wrap">
+                            <div class="clear-cart">
+                                    <span class="cartIcon icon-shopping-cart">
+                                         <i class="iconfont icon-ai66"></i>
+                                    </span>
+                                <h3>购物车里空空如也</h3>
+                                <div class="text">快去这里选购你中意的课程</div>
+                                <p>
+                                    <a class="go-link" href="/" target="_blank">实战课程</a>
+                                </p>
+                                <p>
+                                    <a class="go-link" href="/" target="_blank">职业路径</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="more-box clearfix">
+                            <div class="l show-box">
+                                    <span class="text">
+                                        <a href="/" target="_blank">我的订单中心</a>
+                                    </span>
+                            </div>
+                            <a href="/" target="_blank" class="r moco-btn moco-btn-red go-cart">去购物车</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="header-signin">
+                    <a href="#" id="js-signin-btn">登录</a> / <a href="#" id="js-signup-btn">注册</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search-warp clearfix" style="min-width: 32px; height: 72px;">
+            <div class="pa searchTags">
+                <a href="/" target="_blank">前端入门</a>
+                <a href="/" target="_blank">Java入门</a>
+            </div>
+
+            <div class="search-area" data-search="top-banner">
+                <input class="search-input" type="text">
+                <ul class="search-area-result">
+                </ul>
+            </div>
+            <div class="showhide-search" data-show="no">
+                <i class="iconfont icon-sousuo"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="h72"></div>
+
+
+<div class="main">
+    <div class="container container-types clearfix">
+        <ul class="left_menu l">
+            <li class="m_item active">
+                <i class="iconfont icon-dian"></i><a>推荐</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>资讯</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>动态</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>最新文章</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>区块链</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>人工智能</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>云计算/大数据</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>前端开发</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>后端开发</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>移动互联</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>工具资源</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>职场生活</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>幽默段子</a>
+            </li>
+            <li class="m_item ">
+                <i class="iconfont icon-dian"></i><a>其它</a>
+            </li>
+        </ul>
+        <div class="centerlist l discovery">
+            <div class="bannerBox clearfix">
+                <div class="leftImg l">
+                    <a href="javascript:;" target="_blank">
+                        <img src="//img3.sycdn.imooc.com/5af4fa1700011b2c05000237.jpg">
+                        <div class="bannerDescription">
+                            聊一聊程序员进阶路上，哪本书你认为很不错，对你帮助很大？
+                        </div>
+                    </a>
+                </div>
+                <div class="rightImg r">
+                    <div class="topImg">
+                        <a href="javascript:;" target="_blank">
+                            <img src="//img4.sycdn.imooc.com/5af4fa2b0001175c44012200.jpg">
+                            <div class="bannerDescription2">
+                                <span>如何系统快速学习区块链技术</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bottomImg">
+                        <a href="javascript:;" target="_blank">
+                            <img src="//img3.sycdn.imooc.com/5af4fb9b00013f7439102200.jpg">
+                            <div class="bannerDescription2">
+                                <span>Spring 一二事（1）</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="articleCon js-usercard-box">
+                <div class="article-lwrap clearfix">
+                    <div class="imgCon l">
+                        <img src="//img3.sycdn.imooc.com/5af2f3500001dece10940706-200-200.jpg">
+                    </div>
+                    <div class="list-content l">
+                        <a href="javascript:;" target="_blank" class="title">
+                            <p>基于Spring 4.0 的 Web Socket 聊天室/游戏服务端</p>
+                            <span>聊一聊程序员进阶路上，哪本书你认为很不错，对你帮助很大</span>
+                        </a>
+                        <div class="list-bottom clearfix">
+                            <label class="moco-label label l">
+                                <a href="javascript:;" target="_blank">后端开发</a>
+                            </label>
+                            <div class="browseNum l">
+                                <span>浏览</span>
+                                <span>65</span>
+                            </div>
+                            <div data-fuid="3078817" class="nickName l js-usercard-dialog">
+                                风间影月
+                            </div>
+                            <div class="skill l clearfix">
+                                <a href="javascript:;" target="_blank">
+                                    <span>JAVA</span>
+                                </a>
+                            </div>
+                            <div class="createTime r">
+                                05.09 21:10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-lwrap clearfix">
+                    <div class="imgCon l">
+                        <img src="//img4.sycdn.imooc.com/5af4e2970001a43502000200-200-200.jpg">
+                    </div>
+                    <div class="list-content l">
+                        <a href="javascript:;" target="_blank" class="title">
+                            <p>基于规则评分的密码强度检测算法分析及实现(JavaScript)</p>
+                            <span>聊一聊程序员进阶路上，哪本书你认为很不错，对你帮助很大对你帮助很大对你帮助很大对你帮助很大</span>
+                        </a>
+                        <div class="list-bottom clearfix">
+                            <label class="moco-label label l">
+                                <a href="javascript:;" target="_blank">前端开发</a>
+                            </label>
+                            <div class="browseNum l">
+                                <span>浏览</span>
+                                <span>29</span>
+                            </div>
+                            <div data-fuid="6611952" class="nickName l js-usercard-dialog">
+                                毛三十
+                            </div>
+                            <div class="skill l clearfix">
+                                <a href="javascript:;" target="_blank">
+                                    <span>JQuery</span>
+                                </a>
+                            </div>
+                            <div class="createTime r">
+                                05.11 08:25
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-lwrap clearfix">
+                    <div class="imgCon l">
+                        <img src="//img2.sycdn.imooc.com/5af403ce0001650610240576-200-200.jpg">
+                    </div>
+                    <div class="list-content l">
+                        <a href="javascript:;" target="_blank" class="title">
+                            <p>基于Spring 4.0 的 Web Socket 聊天室/游戏服务端</p>
+                            <span>聊一聊程序员进阶路上，哪本书你认为很不错，对你帮助很大</span>
+                        </a>
+                        <div class="list-bottom clearfix">
+                            <label class="moco-label label l">
+                                <a href="javascript:;" target="_blank">后端开发</a>
+                            </label>
+                            <div class="browseNum l">
+                                <span>浏览</span>
+                                <span>65</span>
+                            </div>
+                            <div data-fuid="3078817" class="nickName l js-usercard-dialog">
+                                风间影月
+                            </div>
+                            <div class="skill l clearfix">
+                                <a href="javascript:;" target="_blank">
+                                    <span>JAVA</span>
+                                </a>
+                            </div>
+                            <div class="createTime r">
+                                05.09 21:10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </div>
+        <!--右侧关键字搜索-->
+        <div class="right_personalization r">
+            <div class="keyword-title">热门专题标签</div>
+            <ul class="keyword-box">
+                <li class="style1"><a href="javascript:;">关键字</a></li>
+                <li class="style2"><a href="javascript:;">spring 实例教程</a></li>
+                <li class="style3"><a href="javascript:;">编程入门</a></li>
+                <li class="style4"><a href="javascript:;">Android工程师学习路线</a></li>
+                <li class="style1"><a href="javascript:;">spring 实例教程</a></li>
+                <li class="style2"><a href="javascript:;">关键字</a></li>
+                <li class="style3"><a href="javascript:;">编程入门</a></li>
+                <li class="style4"><a href="javascript:;">Android工程师学习路线</a></li>
+                <li class="style1"><a href="javascript:;">spring 实例教程</a></li>
+            </ul>
+        </div>
+
+</div>
+
+<!--底部导航-->
+<div class="footer idx-minwidth">
+    <div class="container" style="padding-top: 0">
+        <div class="footer-wrap idx-width">
+            <div class="footer-sns clearfix">
+                <div class="l">
+                    <i class="iconfont icon-weixin">
+                        <i class="footer-sns-weixin-expand">
+                            <div>
+                                <span>扫描二维码</span>
+                                <span>关注微信公众号</span>
+                            </div>
+                            <img src="images/appload.png" alt="">
+                        </i>
+                    </i>
+                    <p>官方公众号</p>
+                </div>
+                <div class="l">
+                    <i class="iconfont icon-weibo"></i>
+                    <p>官方微博</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-link">
+            <a href="/" target="_blank" title="企业合作">企业合作</a>
+            <a href="/" target="_blank" title="人才招聘">人才招聘</a>
+            <a href="/" target="_blank" title="联系我们">联系我们</a>
+            <a href="/" target="_blank" title="讲师招募">讲师招募</a>
+            <a href="/" target="_blank" title="常见问题">常见问题</a>
+            <a href="/" target="_blank" title="意见反馈">意见反馈</a>
+            <a href="/" target="_blank">慕课大学</a>
+            <a href="/" target="_blank" title="友情链接">友情链接</a>
+        </div>
+        <div class="footer-copyright"><p>©&nbsp;2018&nbsp;imooc.com&nbsp;&nbsp;京ICP备 12003892号-11</p></div>
+    </div>
+</div>
+
+
+<!--右侧导航栏-->
+<div id="J_GotoTop" class="elevator">
+    <a href="/" class="elevator-msg" target="_blank">
+        <i class="iconfont icon-xiaoxi"></i>
+        <span class="">意见反馈</span>
+    </a>
+    <a href="/" class="elevator-faq" target="_blank">
+        <i class="iconfont icon-wenti-m"></i>
+        <span class="">常见问题</span>
+    </a>
+    <a href="/" target="_blank" class="elevator-app">
+        <i class="iconfont icon-shouji"></i>
+        <span class="">APP下载</span>
+        <div class="elevator-app-box">
+            <div>
+                <b>安装app</b>
+                <b>下载课程随时学</b>
+            </div>
+            <img src="images/appload.png" alt="">
+        </div>
+    </a>
+    <a href="/" class="elevator-weixin">
+        <i class="iconfont icon-weixin1"></i>
+        <span class="">官方微信</span>
+        <div class="elevator-weixin-box">
+            <div>
+                <b>扫描二维码</b>
+                <b>关注微信公众号</b>
+            </div>
+            <img src="images/appload.png" alt="">
+        </div>
+    </a>
+    <a href="javascript:;" class="elevator-top no-goto" style="display:block" id="backTop">
+        <i class="iconfont icon-top"></i>
+        <span class="">返回顶部</span>
+    </a>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/index.js"></script>
+
+<script type="text/javascript">
+    // 返回顶部
+    $("#backTop").click(function() {
+        $("html,body").animate({scrollTop:0}, 500);
+    });
+</script>
+
+<script>
+    $('.left_menu li.m_item').on('click',function(){
+        $(this).addClass('active').siblings('.m_item').removeClass('active')
+    })
+</script>
+</body>
+</html>

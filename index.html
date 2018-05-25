@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/idangerous.swiper2.7.6.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_634183_65m6khpsc9s5rk9.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .swiper-container{
+            height: 316px;
+        }
+        .pagination {
+            position: absolute;
+            z-index: 20;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .swiper-pagination-switch {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            background: #555;
+            margin: 0 5px;
+            opacity: 0.8;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+        .swiper-active-switch {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="page-container" id="nav" style="background-color: #fff !important;">
+            <div id="logo" class="logo">
+                <a href="/" target="_self" title="首页">
+                    <img title="慕课网" src="images/logo.png">
+                </a>
+            </div>
+            <ul class="nav-item">
+                <li class="set-btn visible-xs-block">
+                    <a href="/" target="_self">登录</a>
+                    /
+                    <a href="/" target="_self">注册</a>
+                </li>
+                <li>
+                    <a href="/" target="_self">免费课程</a>
+                </li>
+                <li>
+                    <a href="/" class="program-nav " target="_self">职业路径</a>
+                </li>
+                <li>
+                    <a href="/" target="_self">实战</a>
+                </li>
+                <li>
+                    <a href="/" target="_self">猿问</a>
+                </li>
+                <li>
+                    <a href="/" target="_self">手记</a>
+                </li>
+            </ul>
+            <div id="login-area">
+                <ul class="header-unlogin clearfix">
+                    <li class="app-load" id="js-app-load">
+                        <a href="/" target="_blank" style="width:60px;">下载APP</a>
+                        <div class="app-load-box clearfix js-load-box">
+                            <img src="images/appload.png" class="l">
+                            <div class="r">
+                                <p>扫描下载慕课网APP</p>
+                                <a href="/" target="_blank">
+                                    <i class="icon-apple"></i>
+                                    App Store下载
+                                </a>
+                                <a href="/" target="_blank">
+                                    <i class="icon-android"></i>
+                                    Android下载
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="shop-cart" id="shop-cart">
+                        <a href="/" class="shop-cart-icon" target="_blank">
+                            <i class="iconfont icon-gouwuche"></i>
+                            <span>购物车</span>
+                        </a>
+                        <div class="my-cart" id="js-my-cart">
+                            <div class="cart-title-box clearfix">
+                                <h2 class="l">我的购物车</h2>
+                                <h5 class="r">已加入<span class="js-incart-num">0</span>门课程</h5>
+                            </div>
+                            <div class="cart-wrap">
+                                <div class="clear-cart">
+                                    <span class="cartIcon icon-shopping-cart">
+                                         <i class="iconfont icon-ai66"></i>
+                                    </span>
+                                    <h3>购物车里空空如也</h3>
+                                    <div class="text">快去这里选购你中意的课程</div>
+                                    <p>
+                                        <a class="go-link" href="//coding.imooc.com" target="_blank">实战课程</a>
+                                    </p>
+                                    <p>
+                                        <a class="go-link" href="//class.imooc.com/" target="_blank">职业路径</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="more-box clearfix">
+                                <div class="l show-box">
+                                    <span class="text">
+                                        <a href="/" target="_blank">我的订单中心</a>
+                                    </span>
+                                </div>
+                                <a href="/" target="_blank" class="r moco-btn moco-btn-red go-cart">去购物车</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-signin">
+                        <a href="#" id="js-signin-btn">登录</a> / <a href="#" id="js-signup-btn">注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-warp clearfix" style="min-width: 32px; height: 72px;">
+                <div class="pa searchTags">
+                    <a href="/" target="_blank">前端入门</a>
+                    <a href="/" target="_blank">Java入门</a>
+                </div>
+
+                <div class="search-area" data-search="top-banner">
+                    <input class="search-input" type="text">
+                    <ul class="search-area-result">
+                    </ul>
+                </div>
+                <div class="showhide-search" data-show="no">
+                    <i class="iconfont icon-sousuo"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h72"></div>
+
+    <div id="main">
+        <div class="bgfff banner-box">
+            <div class="g-banner pr">
+                <!-- 前端开发 -->
+                <div class="submenu submenu_a">
+                    <div class="innerBox clearfix">
+                        <div class="subinnerBox l">
+                            <div class="cates-box">
+                                <div class="fe-base-box clearfix">
+                                    <div class="banner-line">
+                                        <span class="bold mr10 l small-title">基础</span>
+                                    </div>
+                                    <div class="tag-box l">
+                                        <a target="_blank" href="/">HTML/CSS</a>
+                                        <a target="_blank" href="/">JavaScript</a>
+                                        <a target="_blank" href="/">jQuery</a>
+                                    </div>
+                                </div>
+                                <div class="fe-advance-box clearfix">
+                                    <div class="banner-line">
+                                        <span class="bold mr10 l small-title">进阶</span>
+                                    </div>
+                                    <div class="tag-box l">
+                                        <a target="_blank" href="/">Html5</a>
+                                        <a target="_blank" href="/">CSS3</a>
+                                        <a target="_blank" href="/">Node.js</a>
+                                        <a target="_blank" href="/">AngularJS</a>
+                                        <a target="_blank" href="/">Bootstrap</a>
+                                        <a target="_blank" href="/">React</a>
+                                        <a target="_blank" href="/">Sass/Less</a>
+                                        <a target="_blank" href="/">Vue.js</a>
+                                        <a target="_blank" href="/">WebApp</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img01.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">前端进阶：响应式开发与常用框架</h3>
+                                    <div class="course-card-info">
+                                        <span>职业路径</span>
+                                        <span>5步／30课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>944</span>
+                                    </div>
+                                    <div class="course-card-price">￥599.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img02.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">揭秘一线互联网企业 前端JavaScript高级面试</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>317</span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img03.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">前端面试项目冲刺，京东金融Vue组件化实战</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>422</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img04.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">React16+React-Router4 从零打造企业级电商后台管理系统</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>253</span>
+                                    </div>
+                                    <div class="course-card-price">￥348.00</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 后端开发 -->
+                <div class="submenu submenu_b">
+                    <div class="innerBox">
+                        <div class="subinnerBox">
+                            <div class="banner-line">
+                                <span class="bold mr10 l small-title">全部</span>
+                            </div>
+                            <div class="tag-box">
+                                <a target="_blank" href="/">PHP</a>
+
+                                <a target="_blank" href="/">Java</a>
+
+                                <a target="_blank" href="/">SpringBoot</a>
+
+                                <a target="_blank" href="/">Python</a>
+
+                                <a target="_blank" href="">C</a>
+
+                                <a target="_blank" href="/">C++</a>
+
+                                <a target="_blank" href="/">Go</a>
+
+                                <a target="_blank" href="/">C#</a>
+
+                                <a target="_blank" href="/">Ruby</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="Java零基础入门" class="clearfix">
+                                <img src="images/course-card-img01.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">Java零基础入门</h3>
+                                    <div class="course-card-info">
+                                        <span>职业路径</span><span>3步／27课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4394</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img02.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">毕设项目 SSM到Spring Boot 从零开发校园商铺平台</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>904</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img03.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">聚焦Python分布式爬虫必学框架Scrapy 打造搜索引擎</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>2300</span>
+                                    </div>
+                                    <div class="course-card-price">￥388.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img04.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">初识机器学习-理论篇</h3>
+                                    <div class="course-card-info">
+                                        <span>入门</span>
+                                        <span><i class="iconfont icon-set_sns"></i>86569</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 移动开发 -->
+                <div class="submenu submenu_c">
+                    <div class="innerBox">
+                        <div class="subinnerBox">
+                            <div class="banner-line">
+                                <span class="bold mr10 l small-title">全部</span>
+                            </div>
+                            <div class="tag-box">
+                                <a target="_blank" href="/">PHP</a>
+
+                                <a target="_blank" href="/">Java</a>
+
+                                <a target="_blank" href="/">SpringBoot</a>
+
+                                <a target="_blank" href="/">Python</a>
+
+                                <a target="_blank" href="">C</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="Java零基础入门" class="clearfix">
+                                <img src="images/course-card-img01.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">Java零基础入门</h3>
+                                    <div class="course-card-info">
+                                        <span>职业路径</span><span>3步／27课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4394</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img02.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">毕设项目 SSM到Spring Boot 从零开发校园商铺平台</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>904</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img03.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">聚焦Python分布式爬虫必学框架Scrapy 打造搜索引擎</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>2300</span>
+                                    </div>
+                                    <div class="course-card-price">￥388.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img04.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">初识机器学习-理论篇</h3>
+                                    <div class="course-card-info">
+                                        <span>入门</span>
+                                        <span><i class="iconfont icon-set_sns"></i>86569</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 数据库 -->
+                <div class="submenu submenu_d">
+                    <div class="innerBox">
+                        <div class="subinnerBox">
+                            <div class="banner-line">
+                                <span class="bold mr10 l small-title">全部</span>
+                            </div>
+                            <div class="tag-box">
+                                <a target="_blank" href="/">PHP</a>
+
+                                <a target="_blank" href="/">Java</a>
+
+                                <a target="_blank" href="/">SpringBoot</a>
+
+                                <a target="_blank" href="/">Python</a>
+
+                                <a target="_blank" href="">C</a>
+
+                                <a target="_blank" href="/">C++</a>
+
+                                <a target="_blank" href="/">Go</a>
+
+                                <a target="_blank" href="/">C#</a>
+
+                                <a target="_blank" href="/">Ruby</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="Java零基础入门" class="clearfix">
+                                <img src="images/course-card-img01.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">Java零基础入门</h3>
+                                    <div class="course-card-info">
+                                        <span>职业路径</span><span>3步／27课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4394</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img02.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">毕设项目 SSM到Spring Boot 从零开发校园商铺平台</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>904</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img03.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">聚焦Python分布式爬虫必学框架Scrapy 打造搜索引擎</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>2300</span>
+                                    </div>
+                                    <div class="course-card-price">￥388.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img04.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">初识机器学习-理论篇</h3>
+                                    <div class="course-card-info">
+                                        <span>入门</span>
+                                        <span><i class="iconfont icon-set_sns"></i>86569</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 云计算&大数据 -->
+                <div class="submenu submenu_e">
+                    <div class="innerBox">
+                        <div class="subinnerBox">
+                            <div class="banner-line">
+                                <span class="bold mr10 l small-title">全部</span>
+                            </div>
+                            <div class="tag-box">
+                                <a target="_blank" href="">C</a>
+
+                                <a target="_blank" href="/">C++</a>
+
+                                <a target="_blank" href="/">Go</a>
+
+                                <a target="_blank" href="/">C#</a>
+
+                                <a target="_blank" href="/">Ruby</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="Java零基础入门" class="clearfix">
+                                <img src="images/course-card-img01.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">Java零基础入门</h3>
+                                    <div class="course-card-info">
+                                        <span>职业路径</span><span>3步／27课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4394</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img02.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">毕设项目 SSM到Spring Boot 从零开发校园商铺平台</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>904</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img03.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">聚焦Python分布式爬虫必学框架Scrapy 打造搜索引擎</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>2300</span>
+                                    </div>
+                                    <div class="course-card-price">￥388.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img04.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">初识机器学习-理论篇</h3>
+                                    <div class="course-card-info">
+                                        <span>入门</span>
+                                        <span><i class="iconfont icon-set_sns"></i>86569</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 运维&测试 -->
+                <div class="submenu submenu_f">
+                    <div class="innerBox">
+                        <div class="subinnerBox">
+                            <div class="banner-line">
+                                <span class="bold mr10 l small-title">全部</span>
+                            </div>
+                            <div class="tag-box">
+                                <a target="_blank" href="/">PHP</a>
+
+                                <a target="_blank" href="/">Java</a>
+
+                                <a target="_blank" href="/">SpringBoot</a>
+
+                                <a target="_blank" href="/">Python</a>
+
+                                <a target="_blank" href="">C</a>
+
+                                <a target="_blank" href="/">C++</a>
+
+                                <a target="_blank" href="/">Go</a>
+
+                                <a target="_blank" href="/">C#</a>
+
+                                <a target="_blank" href="/">Ruby</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="Java零基础入门" class="clearfix">
+                                <img src="images/course-card-img01.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">Java零基础入门</h3>
+                                    <div class="course-card-info">
+                                        <span>职业路径</span><span>3步／27课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4394</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img02.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">毕设项目 SSM到Spring Boot 从零开发校园商铺平台</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>904</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img03.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">聚焦Python分布式爬虫必学框架Scrapy 打造搜索引擎</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>2300</span>
+                                    </div>
+                                    <div class="course-card-price">￥388.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img04.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">初识机器学习-理论篇</h3>
+                                    <div class="course-card-info">
+                                        <span>入门</span>
+                                        <span><i class="iconfont icon-set_sns"></i>86569</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视觉设计 -> UI设计 -->
+                <div class="submenu submenu_g">
+                    <div class="innerBox">
+                        <div class="subinnerBox">
+                            <div class="banner-line">
+                                <span class="bold mr10 l small-title">全部</span>
+                            </div>
+                            <div class="tag-box">
+                                <a target="_blank" href="/">PHP</a>
+
+                                <a target="_blank" href="/">Java</a>
+
+                                <a target="_blank" href="/">SpringBoot</a>
+
+                                <a target="_blank" href="/">Python</a>
+
+                                <a target="_blank" href="">C</a>
+
+                                <a target="_blank" href="/">C++</a>
+
+                                <a target="_blank" href="/">Go</a>
+
+                                <a target="_blank" href="/">C#</a>
+
+                                <a target="_blank" href="/">Ruby</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recomment-box">
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="Java零基础入门" class="clearfix">
+                                <img src="images/course-card-img01.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">Java零基础入门</h3>
+                                    <div class="course-card-info">
+                                        <span>职业路径</span><span>3步／27课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4394</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img02.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">毕设项目 SSM到Spring Boot 从零开发校园商铺平台</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>904</span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/"
+                               target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img03.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">聚焦Python分布式爬虫必学框架Scrapy 打造搜索引擎</h3>
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>2300</span>
+                                    </div>
+                                    <div class="course-card-price">￥388.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="l banner-course-card">
+                            <a href="/" target="_blank" title="" class="clearfix">
+                                <img src="images/course-card-img04.jpg" class="l">
+                                <div class="l course-card">
+                                    <h3 class="course-card-name">初识机器学习-理论篇</h3>
+                                    <div class="course-card-info">
+                                        <span>入门</span>
+                                        <span><i class="iconfont icon-set_sns"></i>86569</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--左侧导航列表-->
+                <div class="menuContent">
+                    <div class="item" data-id="a">
+                        <a href="/" target="_blank">
+                            <span class="group">前端开发</span>
+                            <i class="iconfont icon-right-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="item" data-id="b">
+                        <a href="/" target="_blank">
+                            <span class="group">后端开发</span>
+                            <i class="iconfont icon-right-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="item" data-id="c">
+                        <a href="/" target="_blank">
+                            <span class="group">移动开发</span>
+                            <i class="iconfont icon-right-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="item" data-id="d">
+                        <a href="/" target="_blank">
+                            <span class="group">数据库</span>
+                            <i class="iconfont icon-right-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="item" data-id="e">
+                        <a href="/" target="_blank">
+                            <span class="group">云计算&amp;大数据</span>
+                            <i class="iconfont icon-right-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="item" data-id="f">
+                        <a href="/" target="_blank">
+                            <span class="group">运维&amp;测试</span>
+                            <i class="iconfont icon-right-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="item" data-id="g">
+                        <a class="bbn" href="/" target="_blank">
+                            <span class="group">UI设计</span>
+                            <i class="iconfont icon-right-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--右侧广告轮播模块-->
+                <div class="g-banner-content">
+                    <!--轮播banner-->
+                    <div class="g-banner-box">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/banner_01.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/banner_02.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/banner_03.jpg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+
+                    <div class="path-banner clearfix">
+                        <a href="/" target="_blank">
+                            <i class="i-web" style="background-image: url(images/course-card-img01.jpg)"></i>
+                            <p class="tit">Web前端攻城狮</p>
+                            <p class="desc">互联网时代最火爆的技术</p>
+                        </a>
+                        <a href="/" target="_blank">
+                            <i class="i-java" style="background-image: url(images/course-card-img02.jpg)"></i>
+                            <p class="tit">Java攻城狮</p>
+                            <p class="desc">综合就业排名第一</p>
+                        </a>
+                        <a href="/" target="_blank">
+                            <i class="i-android" style="background-image: url(images/course-card-img03.jpg)"></i>
+                            <p class="tit">Android攻城狮</p>
+                            <p class="desc">移动设备市场份额第一</p>
+                        </a>
+                        <a href="/" target="_blank">
+                            <i class="i-php" style="background-image: url(images/course-card-img04.jpg)"></i>
+                            <p class="tit">PHP攻城狮</p>
+                            <p class="desc">世界上最好的语言：）</p>
+                        </a>
+                        <a href="/" target="_blank">
+                            <i class="i-ios" style="background-image: url(images/course-card-img04.jpg)"></i>
+                            <p class="tit">iOS攻城狮</p>
+                            <p class="desc">可能是全球最好用的系统</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--楼层一-->
+        <div class="bgfff">
+            <div class="container-types clearfix">
+                <h3 class="types-title">
+                    <em>实</em>／<em>战</em>／<em>推</em>／<em>荐</em>
+                </h3>
+                <div class="clearfix types-content">
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_01.jpg">
+                                <div class="course-label">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>3850</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_02.jpg">
+                                <div class="course-label">
+                                    <label>数据结构</label>
+                                    <label>算法</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>138</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_03.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java企业级电商项目架构演进之路 Tomcat集群与Redis分布式</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>1000</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_04.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>SpringBoot</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Spring Cloud微服务实战</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>571</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_05.jpg">
+                                <div class="course-label">
+                                    <label>PHP</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>519</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--楼层二-->
+        <div class="bg000">
+            <div class="container-types clearfix">
+                <h3 class="types-title">
+                    <em>新</em>／<em>上</em>／<em>好</em>／<em>课</em>
+                </h3>
+                <div class="clearfix types-content">
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_01.jpg">
+                                <div class="course-label">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>3850</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_02.jpg">
+                                <div class="course-label">
+                                    <label>数据结构</label>
+                                    <label>算法</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>138</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_03.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java企业级电商项目架构演进之路 Tomcat集群与Redis分布式</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>1000</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_04.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>SpringBoot</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Spring Cloud微服务实战</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>571</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_05.jpg">
+                                <div class="course-label">
+                                    <label>PHP</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>519</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_01.jpg">
+                                <div class="course-label">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>3850</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_02.jpg">
+                                <div class="course-label">
+                                    <label>数据结构</label>
+                                    <label>算法</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>138</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_03.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java企业级电商项目架构演进之路 Tomcat集群与Redis分布式</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>1000</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_04.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>SpringBoot</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Spring Cloud微服务实战</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>571</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_05.jpg">
+                                <div class="course-label">
+                                    <label>PHP</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>519</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--楼层三-->
+        <div class="bgfff">
+            <div class="container-types clearfix">
+                <h3 class="types-title">
+                    <em>新</em>／<em>手</em>／<em>入</em>／<em>门</em>
+                </h3>
+                <div class="clearfix types-content">
+                    <div class="adsense-box l" style="background: url(images/f3_bg01.jpg) no-repeat center center;background-size: 100%;">
+                        <a href="/" target="_blank">
+                            <h3 class="ellipsis">火爆微信小程序开发，只有实用，没有套路！</h3>
+                            <p class="ellipsis">0门槛搭建微信小程序，大步迈入微信"小"时代</p>
+                        </a>
+                    </div>
+
+                    <div class="adsense-box l" style="background: url(images/f3_bg02.jpg) no-repeat center center;background-size: 100%;">
+                        <a href="/" target="_blank">
+                            <h3 class="ellipsis">前端开发从入门到精通只需三个阶段</h3>
+                            <p class="ellipsis">零基础入门Web前端开发的必备课程</p>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top ">
+                                <div class="course-banner">
+                                    <div class="img-up" style="background-image: url(images/f3_course_01.jpg);">
+                                        <div class="course-label">
+                                            <label>Web前端攻城狮培养计划</label>
+                                        </div>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(images/f3_course_01.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(images/f3_course_01.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">前端小白入门</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>职业路径</span>
+                                        <span>5步／33课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4601</span>
+                                    </div>
+                                    <div class="course-card-price">￥499.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top ">
+                                <div class="course-banner">
+                                    <div class="img-up" style="background-image: url(images/f3_course_02.jpg);">
+                                        <div class="course-stat hot">HOT</div>
+                                        <div class="course-label">
+                                            <label>C++攻城狮培养计划</label>
+                                        </div>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(images/f3_course_02.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(images/f3_course_02.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">C++零基础入门 热门编程语言 编程入门 二级考试必备</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>职业路径</span>
+                                        <span>3步／34课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>221</span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/f3_course_03.jpg">
+                                <div class="course-label">
+                                    <label>动效动画</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">MAYA动画入门课-飞机飞行</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>初级</span>
+                                        <span><i class="icon-set_sns"></i>1826</span>
+                                    </div>
+                                    <div class="course-card-price sales">免费</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card"
+                           href="//class.imooc.com/sc/43?mc_marking=0d134d0e581de7b88daa4f49bc6412ad&amp;mc_channel=syb24"
+                           data-track="xsrm-1-6">
+                            <div class="course-card-top ">
+                                <div class="course-banner">
+                                    <div class="img-up" style="background-image: url(images/f3_course_04.jpg);">
+                                        <div class="course-stat new">NEW</div>
+                                        <div class="course-label">
+                                            <label>JAVA攻城狮培养计划</label>
+                                        </div>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(images/f3_course_04.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(images/f3_course_04.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java Web强化：SSM框架整合</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>职业路径</span>
+                                        <span>3步／18课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>79</span>
+                                    </div>
+                                    <div class="course-card-price">￥588.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/f3_course_05.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>C++</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">程序猿的内功修炼，学好算法与数据结构</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="icon-set_sns"></i>5410</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥166.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top ">
+                                <div class="course-banner">
+                                    <div class="img-up" style="background-image: url(images/f3_course_01.jpg);">
+                                        <div class="course-label">
+                                            <label>Web前端攻城狮培养计划</label>
+                                        </div>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(images/f3_course_01.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(images/f3_course_01.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">前端小白入门</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>职业路径</span>
+                                        <span>5步／33课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>4601</span>
+                                    </div>
+                                    <div class="course-card-price">￥499.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top ">
+                                <div class="course-banner">
+                                    <div class="img-up" style="background-image: url(images/f3_course_02.jpg);">
+                                        <div class="course-stat hot">HOT</div>
+                                        <div class="course-label">
+                                            <label>C++攻城狮培养计划</label>
+                                        </div>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(images/f3_course_02.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(images/f3_course_02.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">C++零基础入门 热门编程语言 编程入门 二级考试必备</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>职业路径</span>
+                                        <span>3步／34课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>221</span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/f3_course_03.jpg">
+                                <div class="course-label">
+                                    <label>动效动画</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">MAYA动画入门课-飞机飞行</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>初级</span>
+                                        <span><i class="icon-set_sns"></i>1826</span>
+                                    </div>
+                                    <div class="course-card-price sales">免费</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card"
+                           href="//class.imooc.com/sc/43?mc_marking=0d134d0e581de7b88daa4f49bc6412ad&amp;mc_channel=syb24"
+                           data-track="xsrm-1-6">
+                            <div class="course-card-top ">
+                                <div class="course-banner">
+                                    <div class="img-up" style="background-image: url(images/f3_course_04.jpg);">
+                                        <div class="course-stat new">NEW</div>
+                                        <div class="course-label">
+                                            <label>JAVA攻城狮培养计划</label>
+                                        </div>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(images/f3_course_04.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(images/f3_course_04.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java Web强化：SSM框架整合</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>职业路径</span>
+                                        <span>3步／18课</span>
+                                        <span><i class="iconfont icon-set_sns"></i>79</span>
+                                    </div>
+                                    <div class="course-card-price">￥588.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/f3_course_05.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>C++</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">程序猿的内功修炼，学好算法与数据结构</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="icon-set_sns"></i>5410</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥166.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--楼层四-->
+        <div class="bg000">
+            <div class="container-types clearfix">
+                <h3 class="types-title">
+                    <em>技</em>／<em>能</em>／<em>提</em>／<em>升</em>
+                </h3>
+                <div class="clearfix types-content">
+                    <div class="adsense-box l" style="background: url(images/f3_bg01.jpg) no-repeat center center;background-size: 100%;">
+                        <a href="/" target="_blank">
+                            <h3 class="ellipsis">从零开始系统学习大数据，新手教程全攻略</h3>
+                            <p class="ellipsis">快速入门Hadoop，高效开发Spark项目实战，玩转大数据</p>
+                        </a>
+                    </div>
+
+                    <div class="adsense-box l" style="background: url(images/f3_bg02.jpg) no-repeat center center;background-size: 100%;">
+                        <a href="/" target="_blank">
+                            <h3 class="ellipsis">揭秘互联网最受欢迎的职场综合硬技能</h3>
+                            <p class="ellipsis">成为紧缺型人才是你升职加薪的筹码</p>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_01.jpg">
+                                <div class="course-label">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>3850</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_02.jpg">
+                                <div class="course-label">
+                                    <label>数据结构</label>
+                                    <label>算法</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>138</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_03.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java企业级电商项目架构演进之路 Tomcat集群与Redis分布式</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>1000</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_04.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>SpringBoot</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Spring Cloud微服务实战</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>571</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_05.jpg">
+                                <div class="course-label">
+                                    <label>PHP</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>519</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_01.jpg">
+                                <div class="course-label">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>3850</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_02.jpg">
+                                <div class="course-label">
+                                    <label>数据结构</label>
+                                    <label>算法</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>138</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_03.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java企业级电商项目架构演进之路 Tomcat集群与Redis分布式</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>1000</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_04.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>SpringBoot</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Spring Cloud微服务实战</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>571</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_05.jpg">
+                                <div class="course-label">
+                                    <label>PHP</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>519</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--楼层五-->
+        <div class="bgfff">
+            <div class="container-types clearfix">
+                <h3 class="types-title">
+                    <em>前</em>／<em>沿</em>／<em>技</em>／<em>术</em>
+                </h3>
+                <div class="clearfix types-content">
+                    <div class="adsense-box l" style="background: url(images/f3_bg01.jpg) no-repeat center center;background-size: 100%;">
+                        <a href="/" target="_blank">
+                            <h3 class="ellipsis">从零开始系统学习大数据，新手教程全攻略</h3>
+                            <p class="ellipsis">快速入门Hadoop，高效开发Spark项目实战，玩转大数据</p>
+                        </a>
+                    </div>
+
+                    <div class="adsense-box l" style="background: url(images/f3_bg02.jpg) no-repeat center center;background-size: 100%;">
+                        <a href="/" target="_blank">
+                            <h3 class="ellipsis">揭秘互联网最受欢迎的职场综合硬技能</h3>
+                            <p class="ellipsis">成为紧缺型人才是你升职加薪的筹码</p>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_01.jpg">
+                                <div class="course-label">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>3850</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_02.jpg">
+                                <div class="course-label">
+                                    <label>数据结构</label>
+                                    <label>算法</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>138</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_03.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java企业级电商项目架构演进之路 Tomcat集群与Redis分布式</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>1000</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_04.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>SpringBoot</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Spring Cloud微服务实战</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>571</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_05.jpg">
+                                <div class="course-label">
+                                    <label>PHP</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>519</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_01.jpg">
+                                <div class="course-label">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>初级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>3850</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat new">NEW</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_02.jpg">
+                                <div class="course-label">
+                                    <label>数据结构</label>
+                                    <label>算法</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>138</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_03.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Java企业级电商项目架构演进之路 Tomcat集群与Redis分布式</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>1000</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥399.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_04.jpg">
+                                <div class="course-label">
+                                    <label>Java</label>
+                                    <label>SpringBoot</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">Spring Cloud微服务实战</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>高级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>571</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥366.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="index-card-container course-card-container container">
+                        <a target="_blank" class="course-card" href="/">
+                            <div class="course-stat hot">HOT</div>
+                            <div class="course-card-top hashadow">
+                                <img class="course-banner" src="images/course_05.jpg">
+                                <div class="course-label">
+                                    <label>PHP</label>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+                                <div class="clearfix course-card-bottom">
+                                    <div class="course-card-info">
+                                        <span>实战</span>
+                                        <span>中级</span>
+                                        <span><i class="iconfont icon-set_sns"></i>519</span>
+                                        <span class="course-star-box">
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                            <i class="iconfont icon-star2 on"></i>
+                                        </span>
+                                    </div>
+                                    <div class="course-card-price">￥299.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--楼层六-->
+        <div class="bg000">
+            <div class="container-types">
+                <h3 class="types-title">
+                    <em>精</em>／<em>彩</em>／<em>手</em>／<em>记</em>／<em>及</em>／<em>猿</em>／<em>问</em>
+                </h3>
+                <dl class="wonderful-list js-wonderful-list types-content">
+                    <dd class="item">
+                        <label class="article-label blue"><i class="iconfont icon-blog"></i>手记文章</label>
+                        <div class="clearfix article-tit">
+                            <a href="/" target="_blank" class="big-tit l hasimg">TensorFlow深度学习（一）：环境搭建</a>
+                            <img class="r" src="images/blog-img.jpg">
+                        </div>
+                        <div>
+                            <p class="article-content">
+                                本教程使用Windows10系统，个别地方会使用Ubuntu虚拟机，请大家自行选择。
+                                提示：遇到问题，先尝试自己百度查询报错信息，如果实在无法解决再评论。 首先建议你本地的python安装 Anaconda
+                                最新的python3.6版本，这也是TensorFlow建议的，Anaconda给我们集成了很多TensorFlow需要依赖的包，
+                                并且在Windows非常难安装成功的包，可以省去很多时间。并且在Windows非常难安装成功的包，可以省去很多时间。
+                            </p>
+                            <div class="bottom-info clearfix">
+                                <span>浏览 498</span><span>推荐 6</span>
+                                <a href="/" target="_blank" class="r blue">阅读全文
+                                    <i class="iconfont icon-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label class="article-label blue"><i class="iconfont icon-blog"></i>手记文章</label>
+                        <div class="clearfix article-tit">
+                            <a href="/" target="_blank" class="big-tit l hasimg">TensorFlow深度学习（一）：环境搭建环境搭建环境搭建环境搭建</a>
+                            <img class="r" src="images/blog-img.jpg">
+                        </div>
+                        <div>
+                            <p class="article-content">
+                                本教程使用Windows10系统，个别地方会使用Ubuntu虚拟机，请大家自行选择。
+                                提示：遇到问题，先尝试自己百度查询报错信息，如果实在无法解决再评论。 首先建议你本地的python安装 Anaconda
+                                最新的python3.6版本，这也是TensorFlow建议的，Anaconda给我们集成了很多TensorFlow需要依赖的包，
+                                并且在Windows非常难安装成功的包，可以省去很多时间。
+                            </p>
+                            <div class="bottom-info clearfix">
+                                <span>浏览 498</span><span>推荐 6</span>
+                                <a href="/" target="_blank" class="r blue">阅读全文
+                                    <i class="iconfont icon-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label class="article-label blue"><i class="iconfont icon-blog"></i>手记文章</label>
+                        <div class="clearfix article-tit">
+                            <a href="/" target="_blank" class="big-tit l hasimg">TensorFlow深度学习（一）：环境搭建</a>
+                            <img class="r" src="images/blog-img.jpg">
+                        </div>
+                        <div>
+                            <p class="article-content">
+                                本教程使用Windows10系统，个别地方会使用Ubuntu虚拟机，请大家自行选择。
+                                提示：遇到问题，先尝试自己百度查询报错信息，如果实在无法解决再评论。 首先建议你本地的python安装 Anaconda
+                                最新的python3.6版本，这也是TensorFlow建议的，Anaconda给我们集成了很多TensorFlow需要依赖的包，
+                                并且在Windows非常难安装成功的包，可以省去很多时间。
+                            </p>
+                            <div class="bottom-info clearfix">
+                                <span>浏览 498</span><span>推荐 6</span>
+                                <a href="/" target="_blank" class="r blue">阅读全文
+                                    <i class="iconfont icon-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label class="article-label blue"><i class="iconfont icon-blog"></i>手记文章</label>
+                        <div class="clearfix article-tit">
+                            <a href="/" target="_blank" class="big-tit l hasimg">TensorFlow深度学习（一）：环境搭建</a>
+                            <img class="r" src="images/blog-img.jpg">
+                        </div>
+                        <div>
+                            <p class="article-content">
+                                本教程使用Windows10系统，个别地方会使用Ubuntu虚拟机，请大家自行选择。
+                                提示：遇到问题，先尝试自己百度查询报错信息，如果实在无法解决再评论。 首先建议你本地的python安装 Anaconda
+                                最新的python3.6版本，这也是TensorFlow建议的，Anaconda给我们集成了很多TensorFlow需要依赖的包，
+                                并且在Windows非常难安装成功的包，可以省去很多时间。
+                            </p>
+                            <div class="bottom-info clearfix">
+                                <span>浏览 498</span><span>推荐 6</span>
+                                <a href="/" target="_blank" class="r blue">阅读全文
+                                    <i class="iconfont icon-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label class="article-label blue"><i class="iconfont icon-blog"></i>手记文章</label>
+                        <div class="clearfix article-tit">
+                            <a href="/" target="_blank" class="big-tit l hasimg">TensorFlow深度学习（一）：环境搭建</a>
+                            <img class="r" src="images/blog-img.jpg">
+                        </div>
+                        <div>
+                            <p class="article-content">
+                                本教程使用Windows10系统，个别地方会使用Ubuntu虚拟机，请大家自行选择。
+                                提示：遇到问题，先尝试自己百度查询报错信息，如果实在无法解决再评论。 首先建议你本地的python安装 Anaconda
+                                最新的python3.6版本，这也是TensorFlow建议的，Anaconda给我们集成了很多TensorFlow需要依赖的包，
+                                并且在Windows非常难安装成功的包，可以省去很多时间。
+                            </p>
+                            <div class="bottom-info clearfix">
+                                <span>浏览 498</span><span>推荐 6</span>
+                                <a href="/" target="_blank" class="r blue">阅读全文
+                                    <i class="iconfont icon-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label class="article-label blue"><i class="iconfont icon-blog"></i>手记文章</label>
+                        <div class="clearfix article-tit">
+                            <a href="/" target="_blank" class="big-tit l hasimg">TensorFlow深度学习（一）：环境搭建</a>
+                            <img class="r" src="images/blog-img.jpg">
+                        </div>
+                        <div>
+                            <p class="article-content">
+                                本教程使用Windows10系统，个别地方会使用Ubuntu虚拟机，请大家自行选择。
+                                提示：遇到问题，先尝试自己百度查询报错信息，如果实在无法解决再评论。 首先建议你本地的python安装 Anaconda
+                                最新的python3.6版本，这也是TensorFlow建议的，Anaconda给我们集成了很多TensorFlow需要依赖的包，
+                                并且在Windows非常难安装成功的包，可以省去很多时间。
+                            </p>
+                            <div class="bottom-info clearfix">
+                                <span>浏览 498</span><span>推荐 6</span>
+                                <a href="/" target="_blank" class="r blue">阅读全文
+                                    <i class="iconfont icon-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <!--楼层七-->
+        <div class="elite-bg" style="background-image: url(images/eliteTbg.jpg)">
+            <div class="container-types container-teacher-types clearfix">
+                <h3 class="types-title">
+                    <em>慕</em>／<em>课</em>／<em>精</em>／<em>英</em>／<em>名</em>／<em>师</em>
+                    <a href="/" class="types-title-more" target="_blank"> <span>查看更多</span>
+                        <i class="iconfont icon-right-arrow"></i>
+                    </a>
+                </h3>
+                <div class="lecturer-list clearfix">
+                    <a target="_blank" href="/" class="lecturer-item">
+                        <img class="lecturer-uimg" src="images/lecturer-img_01.jpg">
+                        <span class="lecturer-name">大周16</span>
+                        <span class="lecturer-title">软件测试工程师</span>
+                        <span class="lecturer-p">
+                            6年多软件测试从业经验，精通自动化测试、性能测试、白盒测试，以及从前端到后台服务器全栈测试等。
+                            精通Jmeter等各种测试工具的使用，拥有多年的web、移动端、大数据相关项目的测试经验。
+                        </span>
+                    </a>
+                    <a target="_blank" href="/" class="lecturer-item">
+                        <img class="lecturer-uimg" src="images/lecturer-img_02.jpg">
+                        <span class="lecturer-name">DellLee</span>
+                        <span class="lecturer-title">Web前端工程师</span>
+                        <span class="lecturer-p">
+                            阿里巴巴资深前端工程师，负责阿里巴巴数据平台技术研发。前去哪儿网高级前端工程师，
+                            曾主导去哪儿网内部前端监控系统设计，负责去哪儿门票用户端的前端设计开发。曾担任国内知名培训机构高级前端讲师，
+                            负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。对优雅编程及工程化有深度思考及间接，
+                            教会你写代码，更帮助你把代码写的漂亮！
+                        </span>
+                    </a>
+                    <a target="_blank" href="/" class="lecturer-item">
+                        <img class="lecturer-uimg" src="images/lecturer-img_01.jpg">
+                        <span class="lecturer-name">于海_</span>
+                        <span class="lecturer-title">移动开发工程师</span>
+                        <span class="lecturer-p">
+                            多年来一直从事移动互联网开发，曾就职于去哪儿网，担任机票iOS项目主导者，现就职于新浪微博，
+                            任iOS资深开发工程师，负责微博正文业务技术指导。工作期间获得“微博集团优秀团队成员奖”荣誉。擅长APP的架构、
+                            性能优化等工作。
+                        </span>
+                    </a>
+                    <a target="_blank" href="/" class="lecturer-item">
+                        <img class="lecturer-uimg" src="images/lecturer-img_02.jpg">
+                        <span class="lecturer-name">__bobby</span>
+                        <span class="lecturer-title">全栈工程师</span>
+                        <span class="lecturer-p">
+                            python全栈工程师，五年工作经验，喜欢钻研python技术，对爬虫、web开发以及机器学习有浓厚的兴趣，
+                            关注前沿技术以及发展趋势。
+                        </span>
+                    </a>
+                    <a target="_blank" href="/" class="lecturer-item">
+                        <img class="lecturer-uimg" src="images/lecturer-img_01.jpg">
+                        <span class="lecturer-name">Juess</span>
+                        <span class="lecturer-title">UI设计师</span>
+                        <span class="lecturer-p">
+                            曾就职搜狐畅游、北语网院，现就职于杏树林一家移动医疗互联网公司负责公司移动产品的UI设计、交互设计；
+                            从事UI设计5年，现在90%的工作任务都依靠Sketch来完成产品设计及分工协作，积累了大量的操作实例及使用技巧，
+                            希望能通过本次课程分享给更多的设计师们。
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--楼层八-->
+        <div class="bgfff">
+            <div class="container-types clearfix">
+                <h3 class="types-title">
+                    <em>吊</em>／<em>炸</em>／<em>天</em>／<em>全</em>／<em>明</em>／<em>星</em>
+                </h3>
+                <div class="star-list clearfix">
+                    <dl class="lead-list clearfix js-lead-list">
+                        <dd>
+                            <div class="lead-item-photo">
+                                <a target="_blank" href="/">
+                                    <img src="images/sup_start_01.jpg">
+                                </a>
+                            </div>
+                            <p class="lead-item-name ellipsis">鸟不拉屎大魔王</p>
+                            <p class="lead-item-tit">风骚课程学霸</p>
+                        </dd>
+                        <dd>
+                            <div class="lead-item-photo">
+                                <a target="_blank" href="/">
+                                <img src="images/tuhao.png">
+                                </a>
+                            </div>
+                            <p class="lead-item-name ellipsis">半枯</p>
+                            <p class="lead-item-tit">神秘解疑大神</p>
+                        </dd>
+                        <dd>
+                            <div class="lead-item-photo">
+                                <a target="_blank" href="/">
+                                    <img src="images/sup_start_01.jpg">
+                                </a>
+                            </div>
+                            <p class="lead-item-name ellipsis">IT程序狮</p>
+                            <p class="lead-item-tit">智慧文章王者</p>
+                        </dd>
+                        <dd>
+                            <div class="lead-item-photo">
+                                <a target="_blank" href="/">
+                                    <img src="images/tuhao.png">
+                                </a>
+                            </div>
+                            <p class="lead-item-name ellipsis">慕粉1941361563</p>
+                            <p class="lead-item-tit">慕课第一土豪</p></dd>
+                    </dl>
+                    <dl class="other-list clearfix js-other-list">
+                        <dd class="other-item blue ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_01.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">乌拉拉学编程</p>
+                                    <p class="desc">一周发布手记 32 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_02.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">i爱慕客</p>
+                                    <p class="desc">一周发布手记 52 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item purple ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_04.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">qq_杀意隆_0</p>
+                                    <p class="desc">一周解题 2 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item blue ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_01.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">袁择</p>
+                                    <p class="desc">一周解题 2 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_02.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">GD_SeHun</p>
+                                    <p class="desc">一周发布手记 87 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item purple ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_03.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">onemoo</p>
+                                    <p class="desc">一周解题 3 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item blue ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_04.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">乌拉拉学编程</p>
+                                    <p class="desc">一周发布手记 32 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_01.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">i爱慕客</p>
+                                    <p class="desc">一周发布手记 52 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item purple ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_03.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">qq_杀意隆_0</p>
+                                    <p class="desc">一周解题 2 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item blue ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_01.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">袁择</p>
+                                    <p class="desc">一周解题 2 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_02.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">GD_SeHun</p>
+                                    <p class="desc">一周发布手记 87 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item purple ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_01.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">onemoo</p>
+                                    <p class="desc">一周解题 3 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item blue ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_04.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">乌拉拉学编程</p>
+                                    <p class="desc">一周发布手记 32 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_02.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">i爱慕客</p>
+                                    <p class="desc">一周发布手记 52 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item purple ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_04.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">qq_杀意隆_0</p>
+                                    <p class="desc">一周解题 2 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item blue ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_02.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">袁择</p>
+                                    <p class="desc">一周解题 2 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_01.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">GD_SeHun</p>
+                                    <p class="desc">一周发布手记 87 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item purple ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_04.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">onemoo</p>
+                                    <p class="desc">一周解题 3 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_01.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">GD_SeHun</p>
+                                    <p class="desc">一周发布手记 87 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item purple ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_02.jpg">
+                                <div>
+                                    <p class="title">="神秘解疑大神"=</p>
+                                    <p class="nickname">onemoo</p>
+                                    <p class="desc">一周解题 3 个</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+                        <dd class="other-item green ">
+                            <a target="_blank" href="/">
+                                <img src="images/other_04.jpg">
+                                <div>
+                                    <p class="title">="智慧文章王者"=</p>
+                                    <p class="nickname">GD_SeHun</p>
+                                    <p class="desc">一周发布手记 87 篇</p>
+                                    <span class="cur">◆</span>
+                                </div>
+                            </a>
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部导航-->
+    <div class="footer idx-minwidth">
+        <div class="container">
+            <div class="footer-wrap idx-width">
+                <div class="footer-sns clearfix">
+                    <div class="l">
+                        <i class="iconfont icon-weixin">
+                            <i class="footer-sns-weixin-expand">
+                                <div>
+                                    <span>扫描二维码</span>
+                                    <span>关注微信公众号</span>
+                                </div>
+                                <img src="images/appload.png" alt="">
+                            </i>
+                        </i>
+                        <p>官方公众号</p>
+                    </div>
+                    <div class="l">
+                        <i class="iconfont icon-weibo"></i>
+                        <p>官方微博</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                <a href="/" target="_blank" title="企业合作">企业合作</a>
+                <a href="/" target="_blank" title="人才招聘">人才招聘</a>
+                <a href="/" target="_blank" title="联系我们">联系我们</a>
+                <a href="/" target="_blank" title="讲师招募">讲师招募</a>
+                <a href="/" target="_blank" title="常见问题">常见问题</a>
+                <a href="/" target="_blank" title="意见反馈">意见反馈</a>
+                <a href="/" target="_blank">慕课大学</a>
+                <a href="/" target="_blank" title="友情链接">友情链接</a>
+            </div>
+            <div class="footer-copyright"><p>©&nbsp;2018&nbsp;imooc.com&nbsp;&nbsp;京ICP备 12003892号-11</p></div>
+        </div>
+    </div>
+
+
+    <!--右侧导航栏-->
+    <div id="J_GotoTop" class="elevator">
+        <a href="/" class="elevator-msg" target="_blank">
+            <i class="iconfont icon-xiaoxi"></i>
+            <span class="">意见反馈</span>
+        </a>
+        <a href="/" class="elevator-faq" target="_blank">
+            <i class="iconfont icon-wenti-m"></i>
+            <span class="">常见问题</span>
+        </a>
+        <a href="/" target="_blank" class="elevator-app">
+            <i class="iconfont icon-shouji"></i>
+            <span class="">APP下载</span>
+            <div class="elevator-app-box">
+                <div>
+                    <b>安装app</b>
+                    <b>下载课程随时学</b>
+                </div>
+                <img src="images/appload.png" alt="">
+            </div>
+        </a>
+        <a href="/" class="elevator-weixin">
+            <i class="iconfont icon-weixin1"></i>
+            <span class="">官方微信</span>
+            <div class="elevator-weixin-box">
+                <div>
+                    <b>扫描二维码</b>
+                    <b>关注微信公众号</b>
+                </div>
+                <img src="images/appload.png" alt="">
+            </div>
+        </a>
+        <a href="javascript:;" class="elevator-top no-goto" style="display:block" id="backTop">
+            <i class="iconfont icon-top"></i>
+            <span class="">返回顶部</span>
+        </a>
+    </div>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/idangerous.swiper2.7.6.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var mySwiper = new Swiper('.swiper-container',{
+                loop: true,
+                autoplay:3000,
+                pagination : '.pagination',
+            });
+        };
+        // 返回顶部
+        $("#backTop").click(function() {
+            $("html,body").animate({scrollTop:0}, 500);
+        });
+    </script>
+</body>
+</html>
